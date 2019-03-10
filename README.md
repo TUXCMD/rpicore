@@ -1,55 +1,47 @@
-# RPICoin [RPI]
-Scrypt Algo PoS 3.0 CryptoCurrency
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+RPICoin Core integration/staging repository
+=====================================
 
-![logo](https://i.imgur.com/VhuAUbi.png)
+[![Build Status](https://travis-ci.org/rpicoin/rpicore.svg?branch=master)](https://travis-ci.org/rpicoin/rpicore) [![GitHub version](https://badge.fury.io/gh/rpicoin%2Fcore.svg)](https://badge.fury.io/gh/rpicoin%2core)
 
-Intro
-==========================
-https://rpicoin.com
+Rpicoin is an experimental cryptocurrency which aims to bring a blockchain-backed secure messaging system, along with several other state-of-the-art blockchain features, as announced in our roadmap.<br>
+Forked off of [PIVX](https://github.com/PIVX-Project/PIVX), it's a fully Proof-of-Stake cryptocurrency with a fair reward system that encourages every type of user to stake and make the network more secure and efficient.
 
-RPICoin is an Secure, Fast and Energy efficient (100%) PoS cryptocurrency.
-Ticker: RPI
+- Anonymized transactions using the [_Zerocoin Protocol_](https://en.wikipedia.org/wiki/Zerocoin_protocol).
+- Fast transactions featuring guaranteed zero confirmation transactions, based on PIVX's _SwiftX_.
 
-RPICoin has a 10% Premine which will be used for bounties, development and marketing.
-*Note: 50% of the premine will be used for give- aways towards the community! 
+For more info, visit us at [rpicoin.tech](http://rpicoin.tech) or check out our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=4481839).
 
-Specifications
-==========================
-* Max number of coins: 5999991337 RPI
-* Block time: 25 seconds 
-* Min stake age: 4 hours
-* Maturity: 10 blocks
-* RPC Port: 31030
-* Type: Proof-of-Stake (PoS 3.0)
-* Algo: Scrypt
-* Address Letter: R
-* Premine: 10%
-* Fee: 0.0001 RPI 
+### Coin Specs
 
-Installation (Raspberry PI)
-==========================
-note: if curl is missing - sudo apt-get install curl
+<table>
+<tr><td>P2P Port</td><td>18000</td></tr>
+<tr><td>RPC Port</td><td>18001</td></tr>
+<tr><td>PoW Algo</td><td>Scrypt*</td></tr>
+<tr><td>PoS Algo</td><td>PoS 3.0</td></tr>
+<tr><td>Annual Inflation Rate</td><td>25%</td></tr>
+<tr><td>Max Reorganization Depth</td><td>500 blocks</td></tr>
+<tr><td>Block Time</td><td>60 Seconds</td></tr>
+<tr><td>Staking Block Reward</td><td>6 RPI</td></tr>
+<tr><td>Masternode Block Reward</td><td>4 RPI</td></tr>
+<tr><td>Min Tx Fee</td><td>0 RPI</td></tr>
+<tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
+<tr><td>Coin Maturity</td><td>100 blocks</td></tr>
+<tr><td>Confirmations</td><td>10</td></tr>
+<tr><td>Stake Confirmations</td><td>100</td></tr>
+<tr><td>Max Coin Supply</td><td>120,000,000 RPI</td></tr>
+<tr><td>Premine</td><td>25,125,000 RPI*</td></tr>
+</table>
 
-`curl https://rpicoin.com/install.sh | sudo bash`
+### Premine
+The initial coins were premined in a private PoW phase up to block 450. Each block held 125,000 coins and some blocks were PoS in order to make a total of 25,000,000 RPI. Due to mining calculations an extra 125,000 RPI was mined and later [burned](https://explorer.rpicoin.tech/tx/ccabff166654a078da5cda2aa758e1f801f14e8886c8b2fcc9e2d32126755fb9).<br>
+To find out how the premine was distributed, check our [ANN thread](https://bitcointalk.org/index.php?topic=2561885).
 
-WIKI
-===========================
-* RPICoin WIKI page (https://wiki.rpicoin.com/)<br>
+### Building Rpicoin
+Check out <b>/doc</b> for specific OS build instructions.
 
-Links
-===========================
-* Official Website(https://www.rpicoin.com/)<br>
-* Block Explorer(https://explorer.rpicoin.com/)<br>
-* Telegram(https://t.me/rpicoin/)<br>
-* Discord(https://discord.gg/stbw6xw)<br>
-* Reddit(https://www.reddit.com/r/RPICoin)<br>
-* Medium(https://medium.com/@rpicoin)<br>
-* Bitcointalk ANN(https://bitcointalk.org/index.php?topic=4587007)</br>
+### Contributing
+Everyone is encouraged to contribute. This project generally follows [Bitcoin Core's development process](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md), with more specific information coming soon about workflow.
 
-
-Exchanges
-===========================
-* Crypto-Bridge.org(https://wallet.crypto-bridge.org/market/BRIDGE.RPI_BRIDGE.BTC)<br>
-* Stocks.Exchange (https://app.stocks.exchange/en/basic-trade/pair/BTC/RPI/)<br>
-* Altilly.com(https://www.altilly.com/market/RPI_BTC)<br>
+### Join our community
+Want to get in touch or need any help? Come say hi to us on our active social platforms!<br>
+[Telegram](https://t.me/rpicoinchat) | [Discord](https://discord.gg/c7dvEXt) | [Twitter](http://twitter.com/RpicoinTech/) | [Facebook](https://facebook.com/RpicoinTech) | [Official Website](https://rpicoin.tech/)
